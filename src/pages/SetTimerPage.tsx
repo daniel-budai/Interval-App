@@ -41,7 +41,9 @@ const SetTimerPage: React.FC = () => {
               </label>
             </div>
           </div>
-          <Button className="w-full text-lg py-3">START TIMER</Button>
+          <Button variant="timerStart" className="mt-4">
+            START TIMER
+          </Button>
         </div>
       </div>
     </div>

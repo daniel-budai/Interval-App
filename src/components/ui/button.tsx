@@ -19,6 +19,16 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+
+        timerStart:
+          "bg-gray-200 text-black border-[1.5px] border-[#222222] w-[279px] h-[51px] rounded-[5px] font-pt-sans text-2xl font-bold tracking-[0.1em] uppercase text-center p-[10px] gap-[10px]",
+        abortTimer:
+          "bg-white text-gray-500 border border-gray-500 rounded-md font-pt-sans text-sm font-normal uppercase text-center py-1 px-4 hover:bg-gray-100 w-[132px]",
+        darkModeAction:
+          "bg-transparent text-white border-white hover:bg-white hover:text-black transition-colors",
+
+        timerAction:
+          "bg-white text-black border border-black rounded-md font-pt-sans text-xs font-normal uppercase text-center py-1 px-3 hover:bg-gray-100",
       },
       size: {
         default: "h-9 px-4 py-2",

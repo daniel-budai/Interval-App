@@ -4,6 +4,8 @@ import SetTimerPage from "./pages/SetTimerPage";
 import AnalogTimerPage from "./pages/AnalogTimerPage";
 import DigitalTimerPage from "./pages/DigitalTimerPage";
 import HamburgerMenu from "./components/HamburgerMenu";
+import AlarmPage from "./pages/AlarmPage";
+import BreakPage from "./pages/BreakPage";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path="/set-timer" element={<SetTimerPage />} />
           <Route path="/analog-timer" element={<AnalogTimerPage />} />
           <Route path="/digital-timer" element={<DigitalTimerPage />} />
+          <Route path="/alarm" element={<AlarmPage />} />
+          <Route path="/break" element={<BreakPage />} />
         </Routes>
       </div>
     </Router>

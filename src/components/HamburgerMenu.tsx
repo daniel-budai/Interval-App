@@ -55,6 +55,24 @@ const HamburgerMenu: React.FC = () => {
               Digital Timer
             </Link>
           </li>
+          <li>
+            <Link
+              to="/alarm"
+              className="text-2xl text-gray-800 hover:text-gray-600"
+              onClick={toggleMenu}
+            >
+              Alarm
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/break"
+              className="text-2xl text-gray-800 hover:text-gray-600"
+              onClick={toggleMenu}
+            >
+              Break
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>
