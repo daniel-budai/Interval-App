@@ -1,16 +1,20 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LoadingPage from "./pages/LoadingPage";
 import SetTimerPage from "./pages/SetTimerPage";
+import AnalogTimerPage from "./pages/AnalogTimerPage";
+import DigitalTimerPage from "./pages/DigitalTimerPage";
 import HamburgerMenu from "./components/HamburgerMenu";
 
 function App() {
   return (
     <Router>
-      <div className="relative">
+      <div className="relative min-h-screen bg-gray-100">
         <HamburgerMenu />
         <Routes>
           <Route path="/" element={<LoadingPage />} />
           <Route path="/set-timer" element={<SetTimerPage />} />
+          <Route path="/analog-timer" element={<AnalogTimerPage />} />
+          <Route path="/digital-timer" element={<DigitalTimerPage />} />
         </Routes>
       </div>
     </Router>
