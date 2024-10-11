@@ -1,4 +1,13 @@
-export function AnalogTimer() {
+import React from "react";
+
+interface AnalogTimerProps {
+  time: number;
+}
+
+export const AnalogTimer: React.FC<AnalogTimerProps> = ({ time }) => {
+  const seconds = time % 60;
+  const secondAngle = 360 - (seconds / 60) * 360;
+
   return (
     <div className="w-64">
       <div className="relative w-full pb-[100%]">
@@ -10,26 +19,26 @@ export function AnalogTimer() {
               x1="50"
               y1="2"
               x2="50"
-              y2={i % 5 === 0 ? "6" : "4"}
+              y2="4"
               transform={`rotate(${i * 6} 50 50)`}
               stroke="currentColor"
-              strokeWidth="0.5"
+              strokeWidth="0.75"
               className="text-black"
             />
           ))}
-          {/* Clock hand */}
+          {/* Second hand */}
           <line
             x1="50"
             y1="50"
             x2="50"
             y2="10"
-            transform={`rotate(0 50 50)`}
+            transform={`rotate(${secondAngle} 50 50)`}
             stroke="currentColor"
             strokeWidth="1"
-            className="text-gray-700"
+            className="text-black"
           />
         </svg>
       </div>
     </div>
   );
-}
+};
