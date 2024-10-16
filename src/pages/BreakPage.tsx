@@ -3,6 +3,7 @@ import { Button } from "../components/ui/button";
 import AnimatedGradient from "../components/GradientBackground";
 import { useTimer } from "../hooks/useTimer";
 import { useNavigate } from "react-router-dom";
+import PauseIcon from "../assets/icons/pause-icon.png";
 
 const BreakPage: React.FC = () => {
   const navigate = useNavigate();
@@ -51,7 +52,7 @@ const BreakPage: React.FC = () => {
         <div className="relative z-10 flex flex-col items-center">
           <div className="w-[132px] h-[132px] rounded-full flex items-center justify-center mb-6">
             <img
-              src="../src/assets/icons/pause-icon.png"
+              src={PauseIcon}
               alt="Pause"
               className="w-18 h-18 translate-y-1"
             />

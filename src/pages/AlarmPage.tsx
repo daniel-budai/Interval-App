@@ -2,7 +2,8 @@ import React from "react";
 import { Button } from "../components/ui/button";
 import AnimatedGradient from "../components/GradientBackground";
 import { useNavigate } from "react-router-dom";
-import { useTimer } from "../hooks/useTimer"; // Update this import
+import { useTimer } from "../hooks/useTimer";
+import BellIcon from "../assets/icons/bell-icon.png";
 
 const AlarmPage: React.FC = () => {
   const navigate = useNavigate();
@@ -30,7 +31,7 @@ const AlarmPage: React.FC = () => {
         <div className="relative z-10 flex flex-col items-center">
           <div className="w-[132px] h-[132px] rounded-full  flex items-center justify-center mb-6">
             <img
-              src="../src/assets/icons/bell-icon.png"
+              src={BellIcon}
               alt="Bell"
               className="w-20 h-20 translate-y-2"
             />
