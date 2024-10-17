@@ -6,7 +6,7 @@ import path from "node:path";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  base: process.env.NODE_ENV === "production" ? "/Interval-App/" : "/", // Use '/' for local development
+  base: process.env.NODE_ENV === "production" ? "/Interval-App/" : "/",
   plugins: [react()],
   resolve: {
     alias: {
