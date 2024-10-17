@@ -5,8 +5,8 @@ import path from "node:path";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-// https://vitejs.dev/config/
 export default defineConfig({
+  base: "/Interval-App/",
   plugins: [react()],
   resolve: {
     alias: {
